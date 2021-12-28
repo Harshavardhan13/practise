@@ -67,12 +67,12 @@ function setTime() {
 
      if(j == hourr){
 
-        document.getElementById('img-container').style.backgroundImage="url(./assets/lunch_image.png)";
+        document.getElementById('img-container').setAttribute("src","./assets./lunch_image.png");
         document.getElementById('text-container').innerHTML="Lets have some lunch!!";
     }
 
      if(k == hourr) {
-        document.getElementById('img-container').style.backgroundImage="url(./assets/goodnight_image.png)";
+        document.getElementById('img-container').setAttribute("src","./assets./goodnight_image.png");
         document.getElementById('text-container').innerHTML="Good Night!!";
     }
 
