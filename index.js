@@ -31,7 +31,7 @@ function Makediv(){
     container.className="grid-item";
     container.id="block";
 
-    document.getElementById("grid-container1").appendChild(container);
+    // document.getElementById("grid-container1").appendChild(container);
 
     var invalue1=document.getElementById("wakeUpTimeSelector");
     var value=invalue1.options[invalue1.selectedIndex].text;
@@ -61,8 +61,8 @@ function setTime() {
     
     if(i == hourr){
 
-        document.getElementById('img-container').style.backgroundImage="url(./assets/wakeup_image.png)";
-        document.getElementById('text-container').innerHTML="WAKE UP!!";
+        document.getElementById('img-container').setAttribute("src","./assets./wakeup_image.png");
+        document.getElementById('text-container').innerHTML="HEY WAKE UP!!";
     }
 
      if(j == hourr){
