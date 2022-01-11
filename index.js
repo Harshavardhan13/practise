@@ -1,56 +1,25 @@
 function clock (){
 
-
     var hour=document.getElementById("hours");
     var minutes=document.getElementById("min");
     var seconds=document.getElementById("secs");
     var am=document.getElementById("am-pm");
 
     var time = new Date();
-    var a=time.getHours();
+    var a=time.getHours() > 12 ? time.getHours() - 12 : time.getHours();
     var b=time.getMinutes();
     var c=time.getSeconds();
+    var d=time.getHours()>= 12 ? "PM" : "AM";
     
-
     hour.innerHTML=a;
     minutes.innerHTML=b;
     seconds.innerHTML=c;
+    am.innerHTML=d;
 
-
-
-
-
-    
 }
 
 setInterval(clock,1000);
 
-function Makediv(){
-
-    var container=document.createElement('div');
-    container.className="grid-item";
-    container.id="block";
-
-     document.getElementById("grid-container1").appendChild(container);
-
-    var invalue1=document.getElementById("wakeUpTimeSelector");
-    var value=invalue1.options[invalue1.selectedIndex].text;
-    document.getElementById("block").innerHTML="wake up time is "+value;
-
-
-    var invalue2=document.getElementById("lunchTimeSelector");
-    var value=invalue2.options[invalue2.selectedIndex].text;
-    document.getElementById("block").innerHTML="Its afternoon time "+value;
-
-
-    var invalue3=document.getElementById("napTimeSelector");
-    var value=invalue3.options[invalue3.selectedIndex].text;
-    document.getElementById("block").innerHTML="nap time is "+value;
-
-
-
-
-}
 
 function setTime() {
 
@@ -59,21 +28,24 @@ function setTime() {
     var k=document.getElementById("napTimeSelector").value;
     var hourr =new Date().getHours();
     
-    if(i == hourr){
+    if(Number(i) == hourr){
 
         document.getElementById('img-container').setAttribute("src","./assets./wakeup_image.png");
         document.getElementById('text-container').innerHTML="HEY WAKE UP!!";
+        document.getElementById('block').innerHTML='Good morning ';
     }
 
-     else if(j == hourr){
+     if(Number(j) == hourr){
 
         document.getElementById('img-container').setAttribute("src","./assets./lunch_image.png");
         document.getElementById('text-container').innerHTML="Lets have some lunch!!";
+        document.getElementById('block').innerHTML='Good Afternoon ' ;
     }
 
-     else if(k == hourr) {
+     if(Number(k) == hourr) {
         document.getElementById('img-container').setAttribute("src","./assets./goodnight_image.png");
-        document.getElementById('text-container').innerHTML="Good Night!!";
+        document.getElementById('text-container').innerHTML="Have a Good Night!!";
+        document.getElementById('block').innerHTML='Good night ' ;
     }
 
      
