@@ -158,12 +158,13 @@ body{
 #clock-container{
     
     border-radius: 10px;
-    height: 70%;
+    height: 80%;
     width: 80%;
     background-color: white;
      justify-content: center;
     align-items: center; 
     display: flex;
+    
     
 }
 
@@ -174,7 +175,7 @@ body{
     height: 15%;
     position: absolute;
     margin-left: 0px;
-    top: 44px;
+    top: 30px;
     opacity: 0.8;
     z-index: -1;
     border-radius: 10px;
@@ -187,7 +188,7 @@ body{
     height: 15%;
     position: absolute;
     margin-left: 0px;
-    top: 51px;
+    top: 35px;
     opacity: 0.4;
     z-index: -2;
     border-radius: 10px;
@@ -308,8 +309,8 @@ body{
     border-radius: 10px;
     background-color: white;
     width: 80%;
-    height: 80%;
-    margin-bottom: 9rem;
+    height: 100%;
+    /* margin-bottom: 9rem; */
     
     
 }
@@ -330,8 +331,8 @@ body{
 
     /* margin-top: 10px; */
     width:500px;
-    height:150px;
-    /* object-fit: fill; */
+    height:350px;
+     object-fit: cover; 
     /* background-repeat: no-repeat; */
     
     
