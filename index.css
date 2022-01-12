@@ -77,18 +77,21 @@ body{
     width: 125px;
     height: 30px;
     border-radius: 4px;
+    margin-left: 20px;
 }
 
 #lunchTimeSelector{
     width: 125px;
     height: 30px;
     border-radius: 4px;
+    margin-left: 40px;
 }
 
 #napTimeSelector{
     width: 125px;
     height: 30px;
     border-radius: 4px;
+    margin-left: 55px;
 }
 
 .div1{
@@ -310,6 +313,7 @@ body{
     background-color: white;
     width: 80%;
     height: 100%;
+    
     /* margin-bottom: 9rem; */
     
     
@@ -329,10 +333,10 @@ body{
 
 #img-container{
 
-    /* margin-top: 10px; */
+    margin-left: 10px;
     width:500px;
     height:350px;
-     object-fit: cover; 
+    object-fit: none;
     /* background-repeat: no-repeat; */
     
     
