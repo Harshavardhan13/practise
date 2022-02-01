@@ -26,16 +26,16 @@ function setTime() {
     var i=document.getElementById("wakeUpTimeSelector").value;
     var j=document.getElementById("lunchTimeSelector").value;
     var k=document.getElementById("napTimeSelector").value;
+    
     var hourr =new Date().getHours();
+    
     
     if(Number(i) == hourr){
 
-        document.getElementById('img-container').setAttribute("src","./assets./wakeup_image.png");
+        document.getElementById('img-container').setAttribute("src","wakeup_image.png");
         document.getElementById('text-container').innerHTML="HEY WAKE UP!!";
         document.getElementById('block').innerHTML='Good morning ';
-        
-        // Number(j)=0;
-        // Number(k)=0;
+             
     }
 
      if(Number(j) == hourr){
@@ -43,17 +43,15 @@ function setTime() {
         document.getElementById('img-container').setAttribute("src","./assets./lunch_image.png");
         document.getElementById('text-container').innerHTML="Lets have some lunch!!";
         document.getElementById('block').innerHTML='Good Afternoon ' ;
-        // Number(i)=0;
-        // Number(k)=0;
+          
+           
     }
 
      if(Number(k) == hourr) {
         document.getElementById('img-container').setAttribute("src","./assets./goodnight_image.png");
         document.getElementById('text-container').innerHTML="Have a Good Night!!";
         document.getElementById('block').innerHTML='Good night ' ;
-        // Number(j)=0;
-        // Number(i)=0;
+        
     }
-
-     
+  
 }
